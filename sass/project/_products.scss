@@ -1,0 +1,66 @@
+.section-products {
+  text-align: center;
+  padding-top: 127px;
+  padding-bottom: 119px;
+  &__container {
+    @extend %container;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+    }
+  }
+  &__title {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    color: $accent-color;
+    line-height: 1.145;
+    text-transform: uppercase;
+    margin-bottom: 259px;
+  }
+  &__label {
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    color: $label-color;
+    line-height: 1.145;
+    margin-bottom: 15px;
+  }
+}
+.section-products__list {
+  display: flex;
+  margin: -15px;
+  &__item {
+    padding: 50px 44px;
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+    height: 525px;
+    border-radius: 22px;
+  }
+  &__item:nth-child(1) {
+    background-color: $hero-background;
+    margin-left: 75px;
+  }
+  &__item:nth-child(2) {
+    background-color: $cafe-background;
+  }
+  &__item:nth-child(3) {
+    background-color: $food-truck-background;
+    margin-right: 75px;
+  }
+  &__title {
+    font-family: "Titan One", sans-serif;
+    line-height: 1.145;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+  &__text {
+    font-weight: 700;
+    line-height: 1.76;
+    color: $white-color;
+  }
+}
